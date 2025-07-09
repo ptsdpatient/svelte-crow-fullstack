@@ -12,10 +12,10 @@ A fullstack starter template featuring:
 
 ## 📁 Project Structure
 
-fullstack-template/
-├── client/ # Svelte frontend
-├── server/ # Crow backend (C++)
-└── README.md
+    fullstack-template/
+    ├── client/ # Svelte frontend
+    ├── server/ # Crow backend (C++)
+    └── README.md
 
 
 ---
@@ -41,9 +41,11 @@ cd fullstack-template
 
 ### 🌐 2. Frontend Setup (Svelte)
 
-```cd client
+```
+cd client
 npm install
-npm run dev```
+npm run dev
+```
 
 
 This will run the frontend at: http://localhost:5173
@@ -52,11 +54,13 @@ This will run the frontend at: http://localhost:5173
 
 ### 🖥️ 3. Backend Setup (Crow + PostgreSQL)
 
-```cd ../server
+```
+cd ../server
 mkdir build && cd build
 cmake ..
 cmake --build .
-./crow-template```
+./crow-template
+```
 
 The backend will run at: http://localhost:2000
 
@@ -64,11 +68,13 @@ The backend will run at: http://localhost:2000
 
 ### 🔐 4. Create `.env` file inside `server/`
 
-```PG_HOST=localhost
+```
+PG_HOST=localhost
 PG_PORT=5432
 PG_DB=kanbique
 PG_USER=postgres
-PG_PASSWORD=yourpassword```
+PG_PASSWORD=yourpassword
+```
 
 ---
 
@@ -87,13 +93,17 @@ Expected output:
 
 ### Build Frontend
 
-```cd client
-npm run build```
+```
+cd client
+npm run build
+```
 
 ### Build Backend (Release mode)
 
-```cd ../server/build
-cmake --build . --config Release```
+```
+cd ../server/build
+cmake --build . --config Release
+```
 
 
 You can configure Crow to serve the frontend static files from `client/dist`.
